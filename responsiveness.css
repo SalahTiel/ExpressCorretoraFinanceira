@@ -1,0 +1,145 @@
+@media screen and (min-width: 1280px){
+    :root{
+        --container: 16vw;
+        --regular: 1.2rem
+    }
+
+    header img{
+        height: 60px;
+    }
+    header a{
+        font: 500 1rem 'Montserrat';
+    }
+
+
+
+    section.home{
+        background: url(assets/CAPA-SITE.png);
+        background-size: cover;
+        overflow: hidden;
+    }
+    section.home h1{
+        width: 50%;
+        text-align: left;
+        font: 700 3.5rem 'Montserrat';
+    }
+    section.home p.legend{
+        width: 50%;
+        text-align: left;
+    }
+    section.home a{
+        width: max-content;
+        font-size: 1.5rem;
+        padding: 1.2rem;
+    }
+    section.home a p{
+        font: 700 1.2rem 'Montserrat';
+    }
+
+
+
+    section.testimonials{
+        padding-inline: 8vw;
+        gap: 8vw;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    section.testimonials div.carousel{
+        order: 0;
+        width: 65%;
+        overflow: hidden;
+    }
+    section.testimonials div.carousel div.carousel-content{
+        width: max-content;
+        flex-direction: row;
+        transition: transform 0.4s ease-in-out;
+    }
+    section.testimonials div.carousel div.carousel-content div.comment{
+        width: 18rem;
+        height: 40vh;
+    }
+    section.testimonials div.carousel div.carousel-content div.comment img{
+        width: 70px;
+    }
+    section.testimonials div.carousel div.buttons{
+        display: flex;
+    }
+
+    section.testimonials div.aside{
+        order: 1;
+        width: 35%;
+    }
+    section.testimonials div.aside p.legend{
+        margin-inline: 0;
+    }
+    section.testimonials div.aside h2{
+        text-align: left;
+    }
+    section.testimonials div.aside p.text{
+        text-align: left;
+    }
+    section.testimonials div.aside a{
+        font-size: 1.2rem;
+    }
+
+
+    section.about div.row{
+        flex-direction: row;
+        gap: 8vw;
+    }
+    section.about div.row:nth-child(2){
+        margin-top: 12vh;
+    }
+    section.about div.row div.text{
+        margin-top: 2rem;
+    }
+    section.about div.row div.text a{
+        width: max-content;
+        font-size: 1.2rem;
+    }
+    section.about div.row img.image{
+        display: block;
+        width: 45%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 20px;
+        
+    }
+    
+    section.about div.informations div.boxes{
+        flex-direction: row;
+        gap: 0;
+        justify-content: space-between;
+    }
+    section.about div.informations div.boxes div.box{
+        width: 32%;
+    }
+    section.about div.informations div.boxes div.box img{
+        height: 60%;
+    }
+    section.about div.informations a.button{
+        width: max-content;
+        font-size: 1.5rem;
+        margin: 8vh auto;
+    }
+
+
+    footer div.top img{
+        width: 100px;
+    }
+    footer div.top p.CNPJ{
+        font-size: 1rem;
+    }
+
+
+
+
+
+
+
+    @keyframes carousel{
+        0%{transform: translate(calc((18rem + 2rem) * (-1)));}
+        100%{transform: translate(calc((18rem + 2rem) * (-6)));}
+    }
+    
+}

@@ -1,0 +1,515 @@
+:root{
+    --main: #78a907;
+    --second: #4f7000;;
+    --white: #ffffff;
+
+    --regular: 1rem;
+    
+    --container: 10vw;
+    --border-radius: 50px;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    overflow-X: hidden;
+}
+body{
+    background-color: var(--main);
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    padding: 8vh var(--container) 0;
+    z-index: 1;
+}
+header img{
+    height: 50px;
+}
+header a{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem;
+    border-radius: var(--border-radius);
+    font: 700 0.7rem 'Montserrat';
+    color: var(--white);
+    background-color: var(--main);
+}
+    header a:hover{
+        background-color: var(--second);
+        transition: all 300ms;
+}
+header a img{
+    width: 25px;
+    height: 25px;
+    filter: brightness(100);
+}
+
+
+
+section.home{
+    width: 100vw;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    padding-inline: var(--container);
+    background: url(assets/capasite-mobile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 80% 50%;
+}
+section.home h1{
+    text-align: center;
+    font: 700 2rem 'Montserrat';
+    color: var(--white);
+}
+section.home p{
+    text-align: center;
+    font: 400 var(--regular) 'Montserrat';
+    color: var(--white);
+}
+section.home a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    text-align: center;
+    background-color: var(--main);
+}
+    section.home a:hover{
+        background-color: var(--second);
+        transition: all 300ms;
+}
+section.home a img{
+    width: 30px;
+    height: 30px;
+    filter: brightness(100);
+}
+section.home a p{
+    font: 700 0.8rem 'Montserrat';
+    color:var(--white);
+}
+
+div.strip{
+    width: max-content;
+    display: flex;
+    align-items: center;
+    height: 8vh;
+    gap: 1rem;
+    overflow: hidden;
+    background-color: var(--second);
+    animation: slide 15s linear infinite;
+}
+div.strip p{
+    width: 11rem;
+    text-align: center;
+    font: 700 0.8rem 'Montserrat';
+    color: var(--white);
+}
+div.strip img{
+    width: 2rem;
+}
+
+
+
+section.testimonials{
+    display: flex;
+    flex-direction: column;
+    gap: 12vw;
+    padding: 8vh var(--container);
+    background-color: var(--main);
+}
+section.testimonials div.carousel{
+    order: 1;
+}
+section.testimonials div.carousel div.carousel-content{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+section.testimonials div.carousel div.carousel-content div.comment{
+    padding: 1rem;
+    height: 20rem;
+    border-radius: 15px;
+    background-color: #2e613763;
+    position: relative;
+}
+section.testimonials div.carousel div.carousel-content div.comment img{
+    width: 50px;
+    border-radius: 10px;
+}
+section.testimonials div.carousel div.carousel-content div.comment p.name{
+    font: 600 1.1rem 'Montserrat';
+    color: var(--white);
+}
+section.testimonials div.carousel div.carousel-content div.comment p.tag{
+    width: max-content;
+    margin-top: 0.5rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 50px;
+    font: 400 0.8rem 'Montserrat';
+    border: 1px solid #f3fdf3;
+    color: var(--white);
+    background-color: #8ac29463;;
+}
+section.testimonials div.carousel div.carousel-content div.comment p.testimonial{
+    margin-top: 0.5rem;
+    font: 400 1rem 'Montserrat';
+    color: var(--white);
+}
+section.testimonials div.carousel div.carousel-content div.comment img.stars{
+    position: absolute;
+    bottom: 1rem;
+}
+section.testimonials div.carousel div.buttons{
+    margin-top: 2rem;
+    display: none;
+    gap: 1rem;
+
+}
+section.testimonials div.carousel div.buttons button{
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#2e613763;;
+}
+    section.testimonials div.carousel div.buttons button:hover{
+        background-color: var(--second);
+        transition: all 100ms;
+    }
+section.testimonials div.carousel div.buttons button.prev-btn{
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+section.testimonials div.carousel div.buttons button img{
+    height: 25px;
+}
+section.testimonials div.aside{
+    height: max-content;
+    order: 0;
+}
+section.testimonials div.aside p.legend{
+    width: max-content;
+    margin-inline: auto;
+    padding: 0.5rem;
+    border: 1px solid var(--white);
+    border-radius: 50px;
+    color: var(--white);
+    font: 400 1rem 'Montserrat';
+    background-color: #2e613763;;
+}
+section.testimonials div.aside h2{
+    color: var(--white);
+    font: 600 1.5rem 'Montserrat';
+    margin-top: 2rem;
+    text-align: center;
+}
+section.testimonials div.aside p.text{
+    margin-top: 2rem;
+    color: white;
+    font: 400 1rem 'Montserrat';
+}
+section.testimonials div.aside a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 2rem;
+    padding: 1rem;
+    font: 700 0.8rem 'Montserrat';
+    color: var(--white);
+    background-color:#2e613763;;
+    border-radius: 50px;
+    text-align: center;
+}
+    section.testimonials div.aside a:hover{
+        background-color: var(--second);
+        transition: all 300ms;
+}
+section.testimonials div.aside a img{
+    width: 30px;
+    height: 30px;
+    filter: brightness(100);
+}
+
+
+
+section.about{
+    padding: 8vh var(--container);
+    background-color: var(--white);
+}
+section.about div.row{
+    display: flex;
+    flex-direction: column;
+}
+section.about div.row div.text h3{
+    font: 600 2rem 'Montserrat';
+    color: var(--main);
+}
+section.about div.row div.text p.legend{
+    font: 400 var(--regular) 'Montserrat';
+    color: black;
+    margin-top: 2rem;
+}
+section.about div.row div.text ul li{
+    font: 400 var(--regular) 'Montserrat';
+    color: black;
+    margin-top: 2rem;
+}
+section.about div.row div.text ul li span{
+    font-weight: 700;
+}
+section.about div.row div.text a{
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    text-align: center;
+    border-radius: 50px;
+    font: 600 0.8rem 'Montserrat';
+    background-color: var(--main);
+    color: var(--white);
+}
+    section.about div.row div.text a:hover{
+        background-color: var(--second);
+        transition: all 300ms;
+
+}
+section.about div.row div.text a img{
+    width: 30px;
+    height: 30px;
+    filter: brightness(100);
+}
+section.about div.row img.image{
+    display: none;
+}
+section.about div.informations{
+    margin-top: 16vh;
+}
+section.about div.informations h3{
+    font: 600 1.8rem 'Montserrat';
+    text-align: center;
+    color: var(--main);
+    margin-top: 8vh;
+}
+section.about div.informations p.subtitle{
+    font: 400 var(--regular) 'Montserrat';
+    text-align: center;
+    color: black;
+    margin-top: 1rem;
+}
+section.about div.informations div.boxes{
+    display: flex;
+    margin-top: 2rem;
+    flex-direction: column;
+    gap: 2rem;
+}
+section.about div.informations div.boxes div.box{
+    padding: 1rem;
+    border-radius: 20px;
+    background-color: var(--second);
+}
+section.about div.informations div.boxes div.box img{
+    width: 100%;
+    height: 50%;
+    border-radius: 10px;
+    object-fit: cover;
+    
+}
+section.about div.informations div.boxes div.box p.title{
+    color: var(--white);
+    font: 500 var(--regular) 'Montserrat';
+    margin-top: 1rem;
+    text-align: center;
+}
+section.about div.informations div.boxes div.box p.description{
+    color: var(--white);
+    font: 400 0.9rem 'Montserrat';
+    margin-top: 1rem;
+    text-align: center;
+}
+section.about div.informations a.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    margin-top: 2rem;
+    text-align: center;
+    border-radius: 50px;
+    font: 600 0.8rem 'Montserrat';
+    background-color: var(--main);
+    color: var(--white);
+}
+    section.about div.informations a.button:hover{
+        background-color: var(--second);
+        transition: all 300ms;
+}
+section.about div.informations a.button img{
+    width: 30px;
+    height: 30px;
+    filter: brightness(100);
+}
+section.about div.informations div.boxes.second div.box{
+    border: 2px solid var(--main);
+    background-color: var(--white);
+}
+section.about div.informations div.boxes.second div.box img{
+    height: 80%;
+}
+section.about div.informations div.boxes.second div.box p.title{
+    font: 600 1.5rem 'Montserrat';
+    color: var(--main);
+}
+
+
+
+section.FAQ{
+    padding: 8vh var(--container);
+    background-color: var(--white);
+}
+section.FAQ h2{
+    text-align: center;
+    font: 600 2rem 'Montserrat';
+    color: var(--main);
+}
+section.FAQ details{
+    margin-top: 2rem;
+    border-bottom: 1px solid var(--second);
+    padding-bottom: 2rem;
+    text-align: left;
+}
+section.FAQ details summary{
+    font: 700 var(--regular) 'Montserrat';
+    color: var(--second);
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+section.FAQ details p{
+    font: 400 var(--regular) 'Montserrat';
+    color: black;
+    margin-top: 1rem;
+}
+section.FAQ details summary::marker{
+    content: "";
+    font-size: 0;
+    color: transparent;
+    opacity: 0;
+}
+section.FAQ details summary span::after{
+    content: '+';
+    color: var(--second);
+}
+section.FAQ details[open] summary span::after{
+    content: "-";
+    color: var(--second);
+}
+section.FAQ details summary::-webkit-details-marker {
+    display: none;
+}
+
+
+
+footer{
+    margin-top: 8vh;
+    padding: 8vh var(--container);
+    background-color: var(--main);
+}
+footer div.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer div.top img{
+    width: 70px;
+}
+footer div.top p.CNPJ{
+    font: 600 0.7rem 'Montserrat';
+    color: var(--white);
+}
+footer p.credits{
+    margin-top: 2rem;
+    color: var(--white);
+    font: 400 var(--regular) 'Montserrat';
+    display: block;
+    margin-inline: auto;
+    text-align: center;
+}
+
+
+
+
+section.home.animated-item,
+div.carousel.animated-item,
+div.aside.animated-item,
+div.row.animated-item,
+div.informations.animated-item,
+section.FAQ.animated-item{
+    opacity: 0;
+    transform: translate(-70px);
+    transition: all 1s;
+}
+section.home.animated-item.visible,
+div.carousel.animated-item.visible,
+div.aside.animated-item.visible,
+div.row.animated-item.visible,
+div.informations.animated-item.visible,
+section.FAQ.animated-item.visible{
+    opacity: 1;
+    transform: translate(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes slide{
+    0%{transform: translate(calc((14rem + 1rem) * (-1)));}
+    100%{transform: translate(calc((14rem + 1rem) * (-5)));}
+}
