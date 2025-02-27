@@ -68,10 +68,10 @@ section.home{
     gap: 2rem;
     justify-content: center;
     padding-inline: var(--container);
-    background: url(assets/capasite-mobile.png);
+    background: url(assets/img-home.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 80% 50%;
+    background-position: 70% 50%;
 }
 section.home h1{
     text-align: center;
